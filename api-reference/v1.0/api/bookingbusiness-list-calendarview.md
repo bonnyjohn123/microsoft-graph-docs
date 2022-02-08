@@ -61,7 +61,7 @@ The following is an example of the request.
   "blockType": "request"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/calendarView?start=2018-04-30T00:00:00Z&end=2018-05-10T00:00:00Z
+GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/calendarView?start=2022-02-06T00:00:00Z&end=2022-02-10T00:00:00Z
 ```
 
 ### Response
@@ -80,68 +80,40 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/solutions/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.onmicrosoft.com')/calendarView",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#solutions/bookingBusinesses('Contosolunchdelivery%40contoso.onmicrosoft.com')/calendarView",
     "value": [
         {
             "id": "AAMkADKpAAA=",
             "selfServiceAppointmentId": "00000000-0000-0000-0000-000000000000",
-            "isLocationOnline": true,
-            "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MTlhZTE3MDUtODk0Yy00MGZkLTlhNzktN2FmYTk3MDUxNmE2%40thread.v2/0?context=%7b%22Tid%22%3a%22995fa18c-b557-4694-8d07-b89779d6dc77%22%2c%22Oid%22%3a%22d4d260ab-989d-490e-b121-e2066391807a%22%7d",
-            "customers": [
-                {
-                    "@odata.type": "#microsoft.graph.bookingCustomerInformation",
-                    "customerId": "80b5ddda-1e3b-4c9d-abe2-d606cc075e2e",
-                    "name": "Adele Vance",
-                    "emailAddress": "adelev@proseware.com",
-                    "phone": "213-555-0156",
-                    "notes": null,
-                    "location": {
-                        "displayName": "Customer",
-                        "locationEmailAddress": null,
-                        "locationUri": "",
-                        "locationType": null,
-                        "uniqueId": null,
-                        "uniqueIdType": null,
-                        "address": {
-                            "street": "",
-                            "city": "",
-                            "state": "",
-                            "countryOrRegion": "",
-                            "postalCode": ""
-                        },
-                        "coordinates": {
-                            "altitude": null,
-                            "latitude": null,
-                            "longitude": null,
-                            "accuracy": null,
-                            "altitudeAccuracy": null
-                        }
-                    },
-                    "timeZone": "America/Chicago"
-                }
-            ],
-            "customerTimeZone": "America/Chicago",
-            "smsNotificationsEnabled": true,
-            "serviceId": "57da6774-a087-4d69-b0e6-6fb82c339976",
-            "serviceName": "Catered bento",
-            "duration": "PT30M",
-            "preBuffer": "PT5M",
-            "postBuffer": "PT10M",
-            "priceType": "fixedPrice",
-            "price": 10,
+            "additionalInformation": "",
+            "isLocationOnline": false,
+            "joinWebUrl": null,
+            "customerTimeZone": null,
+            "serviceId": "d1e3db10-e679-4aac-aad4-1a6dccc77777",
+            "serviceName": "Initial consult",
+            "duration": "PT1H",
+            "preBuffer": "PT0S",
+            "postBuffer": "PT0S",
+            "priceType": "notSet",
+            "price": 0.0,
             "serviceNotes": null,
             "optOutOfCustomerEmail": false,
-            "staffMemberIds": [],
+            "staffMemberIds": [
+                "da52457d-a74d-4df1-a190-225fe1dffrr4"
+            ],
+            "smsNotificationsEnabled": false,
+            "maximumAttendeesCount": 1,
+            "filledAttendeesCount": 1,
             "startDateTime": {
-                "dateTime": "2018-05-05T12:00:00.0000000Z",
-                "timeZone": "UTC"
+                "dateTime": "2022-02-08T14:30:00-06:00",
+                "timeZone": "America/Chicago"
             },
             "endDateTime": {
-                "dateTime": "2018-05-05T12:30:00.0000000Z",
-                "timeZone": "UTC"
+                "dateTime": "2022-02-08T15:30:00-06:00",
+                "timeZone": "America/Chicago"
             },
             "serviceLocation": {
-                "displayName": "Customer location (876 Tenth Avenue, Buffalo, NY 98052, USA)",
+                "displayName": "Our office address",
                 "locationEmailAddress": null,
                 "locationUri": "",
                 "locationType": null,
@@ -162,68 +134,41 @@ Content-type: application/json
                     "altitudeAccuracy": null
                 }
             },
-            "reminders": []
+            "reminders": [],
+            "customers": []
         },
         {
             "id": "AAMkADKnAAA=",
             "selfServiceAppointmentId": "00000000-0000-0000-0000-000000000000",
-            "isLocationOnline": true,
-            "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MDUtODk0Yy00MGZkLTlhNzktN2xNmE2%40thread.v2/0?context=%7b%22Tid%22%3a%22995fa18c-b557-4694-8d07-b89779d6dc77%22%2c%22Oid%22%3a%22d4d260ab-989d-490e-b121-e2066391807a%22%7d",
-            "customers": [
-                {
-                    "@odata.type": "#microsoft.graph.bookingCustomerInformation",
-                    "customerId": "7ed53fa5-9ef2-4f2f-975b-27447440bc09",
-                    "name": "Jordan Miller",
-                    "emailAddress": "jordanm@contoso.com",
-                    "phone": "213-555-0199",
-                    "notes": null,
-                    "location": {
-                        "displayName": "Customer",
-                        "locationEmailAddress": null,
-                        "locationUri": "",
-                        "locationType": null,
-                        "uniqueId": null,
-                        "uniqueIdType": null,
-                        "address": {
-                            "street": "",
-                            "city": "",
-                            "state": "",
-                            "countryOrRegion": "",
-                            "postalCode": ""
-                        },
-                        "coordinates": {
-                            "altitude": null,
-                            "latitude": null,
-                            "longitude": null,
-                            "accuracy": null,
-                            "altitudeAccuracy": null
-                        }
-                    },
-                    "timeZone": "America/Chicago"
-                }
-            ],
-            "customerTimeZone": "America/Chicago",
-            "smsNotificationsEnabled": true,
-            "serviceId": "57da6774-a087-4d69-b0e6-6fb82c339976",
-            "serviceName": "Catered bento",
-            "duration": "PT30M",
-            "preBuffer": "PT5M",
-            "postBuffer": "PT10M",
-            "priceType": "fixedPrice",
-            "price": 10,
+            "additionalInformation": "",
+            "isLocationOnline": false,
+            "joinWebUrl": null,
+            "customerTimeZone": null,
+            "serviceId": "d1e3db10-e679-4aac-aad4-1a6dccc77777",
+            "serviceName": "Initial consult",
+            "duration": "PT1H",
+            "preBuffer": "PT0S",
+            "postBuffer": "PT0S",
+            "priceType": "notSet",
+            "price": 0.0,
             "serviceNotes": null,
             "optOutOfCustomerEmail": false,
-            "staffMemberIds": [],
+            "staffMemberIds": [
+                "1707ec9b-8028-49bd-88a7-2096781ccec"
+            ],
+            "smsNotificationsEnabled": false,
+            "maximumAttendeesCount": 1,
+            "filledAttendeesCount": 1,
             "startDateTime": {
-                "dateTime": "2018-05-06T12:00:00.0000000Z",
-                "timeZone": "UTC"
+                "dateTime": "2022-02-09T14:30:00-06:00",
+                "timeZone": "America/Chicago"
             },
             "endDateTime": {
-                "dateTime": "2018-05-06T12:30:00.0000000Z",
-                "timeZone": "UTC"
+                "dateTime": "2022-02-09T15:30:00-06:00",
+                "timeZone": "America/Chicago"
             },
             "serviceLocation": {
-                "displayName": "Customer location (123 First Avenue, Buffalo, NY 98052, USA)",
+                "displayName": "Our office address",
                 "locationEmailAddress": null,
                 "locationUri": "",
                 "locationType": null,
@@ -244,7 +189,8 @@ Content-type: application/json
                     "altitudeAccuracy": null
                 }
             },
-            "reminders": []
+            "reminders": [],
+            "customers": []
         }
     ]
 }
