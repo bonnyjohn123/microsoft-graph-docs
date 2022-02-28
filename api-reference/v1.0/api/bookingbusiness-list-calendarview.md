@@ -90,12 +90,12 @@ Content-type: application/json
             "joinWebUrl": null,
             "customerTimeZone": null,
             "serviceId": "d1e3db10-e679-4aac-aad4-1a6dccc77777",
-            "serviceName": "Initial consult",
+            "serviceName": "Catered bento",
             "duration": "PT1H",
             "preBuffer": "PT0S",
             "postBuffer": "PT0S",
-            "priceType": "notSet",
-            "price": 0.0,
+            "priceType": "FixedPrice",
+            "price": 10,
             "serviceNotes": null,
             "optOutOfCustomerEmail": false,
             "staffMemberIds": [
@@ -113,7 +113,7 @@ Content-type: application/json
                 "timeZone": "America/Chicago"
             },
             "serviceLocation": {
-                "displayName": "Our office address",
+                "displayName": "Customer location (123 First Avenue, Buffalo, NY 98052, USA)",
                 "locationEmailAddress": null,
                 "locationUri": "",
                 "locationType": null,
@@ -145,12 +145,12 @@ Content-type: application/json
             "joinWebUrl": null,
             "customerTimeZone": null,
             "serviceId": "d1e3db10-e679-4aac-aad4-1a6dccc77777",
-            "serviceName": "Initial consult",
+            "serviceName": "Catered bento",
             "duration": "PT1H",
             "preBuffer": "PT0S",
             "postBuffer": "PT0S",
-            "priceType": "notSet",
-            "price": 0.0,
+            "priceType": "FixedPrice",
+            "price": 10,
             "serviceNotes": null,
             "optOutOfCustomerEmail": false,
             "staffMemberIds": [
@@ -168,7 +168,7 @@ Content-type: application/json
                 "timeZone": "America/Chicago"
             },
             "serviceLocation": {
-                "displayName": "Our office address",
+                "displayName": "Customer location (876 Tenth Avenue, Buffalo, NY 98052, USA)",
                 "locationEmailAddress": null,
                 "locationUri": "",
                 "locationType": null,
